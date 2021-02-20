@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="15dip">
+	
+	<Button
+		android:id="@+id/button_start_service"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="Start notifier service">
+	</Button>
+	
+	<Button
+		android:id="@+id/button_stop_service"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="Stop notifier service">
+	</Button>
+	
+	<Button
+		android:id="@+id/button_preferences"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="Preferences">
+	</Button>
+	
+	<TextView
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="Click to Reptilesoft logo to see all of our apps!">
+	</TextView>
+	
+	<ImageButton
+		android:id="@+id/image_rs_logo"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal"
+		android:src="@drawable/rslogo">
+	</ImageButton>
+	
+	<TextView
+		android:id="@+id/text_app_about"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="@string/string_about">
+	</TextView>
+	
+</LinearLayout>

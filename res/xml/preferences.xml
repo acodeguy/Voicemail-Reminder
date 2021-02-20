@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  	xmlns:android="http://schemas.android.com/apk/res/android">
+  	
+  	<PreferenceCategory
+  		android:key="key_cat_general"
+  		android:title="General settings">
+  	
+  		<CheckBoxPreference
+  			android:key="key_service"
+  			android:title="Start on boot"
+  			android:summary="Start listener service with phone"
+  			android:defaultValue="true">
+  		</CheckBoxPreference>
+  		
+  		<ListPreference
+  			android:key="key_frequency"
+  			android:title="Frequency"
+  			android:summary="Notification frequency"
+  			android:entries="@array/freq_entries"
+  			android:entryValues="@array/freq_values"
+  			android:defaultValue="300000">
+  			
+  		</ListPreference>
+  		
+  		<RingtonePreference
+  			android:key="key_notification"
+  			android:title="Notification"
+  			android:summary="Select your notification"
+  			android:showDefault="true"
+  			android:showSilent="false"
+  			android:ringtoneType="notification"
+  			android:defaultValue="content://settings/system/notification_sound">
+  		</RingtonePreference>
+  		
+  		<CheckBoxPreference
+  			android:key="key_vibrate"
+  			android:title="Vibration"
+  			android:summary="Vibration with notification"
+  			android:defaultValue="true">
+  		</CheckBoxPreference>
+  		
+  		<ListPreference
+  			android:key="key_vib_duration"
+  			android:title="Vibration duration"
+  			android:summary="How long to vibrate for?"
+  			android:entries="@array/vib_duration_entries"
+  			android:entryValues="@array/vib_duration_values"
+  			android:defaultValue="3000">
+  		</ListPreference>
+  		
+  		
+  	</PreferenceCategory>
+  		
+</PreferenceScreen>
